@@ -7,7 +7,7 @@ health-hub is a hosptial managment system for organizing hospital records and ma
 ## Getting Started
 The repository is categorized into 2, the backend ([server](./server/)) and the frontend ([client](./client/)). To set up the project, clone the repo
 ```sh
-git clone https://github.com/standardforever/health-hub.git
+git clone https://github.com/health-hub/health-hub.git
 ```
 Once done, you'll need to setup the server and the client to use the app.
 
