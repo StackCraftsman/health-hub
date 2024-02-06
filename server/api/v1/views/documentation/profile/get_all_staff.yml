@@ -1,0 +1,51 @@
+gets all Staff profile 
+---
+tags:
+  - Profile
+responses:
+  200:
+    description: request executed successfully.
+    schema:
+      type: array
+      items:
+        properties:
+          address:
+            type: "string"
+            example: "NO1 kaduna"
+          created_at:
+            type: "string"
+            example: "2022-12-21 02:06:55.560224"
+          email:
+            type: "string"
+            example: "standard.forever123@gmail.com"
+          first_name:
+            type: "string"
+            example: "Standard"
+          last_name:
+            type: "string"
+            example: "forever"
+          licence_no:
+            type: "string"
+            example: "Zxc12"
+          phone:
+            type: "string"
+            example: "09025162207"
+          reg_no:
+            type: "string"
+            example: "U18DM1001"
+          updated_at:
+            type: "string"
+            example: "2022-12-21 02:06:55.560224"
+          user_role:
+            type: "string"
+            example: "Specalist"
+          user_type:
+            type: "string"
+            example: "Doctor"
+          id:
+            type: string
+            example: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747
+
+            
+
+

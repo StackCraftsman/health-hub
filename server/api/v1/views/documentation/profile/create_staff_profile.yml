@@ -1,0 +1,125 @@
+Create a new staff
+---
+tags:
+  - Profile
+parameters:
+  - name: request
+    in: body
+    required: true
+    requires:
+      - name
+      - address
+      - email
+      - first_name
+      - last_name
+      - licence_no
+      - phone
+      - user_role
+      - user_type
+    properties:
+      address:
+          type: "string"
+          example: "NO1 kaduna"
+      email:
+        type: "string"
+        example: "standard.forever123@gmail.com"
+      first_name:
+        type: "string"
+        example: "Standard"
+      last_name:
+        type: "string"
+        example: "forever"
+      licence_no:
+        type: "string"
+        example: "Zxc12"
+      phone:
+        type: "string"
+        example: "09025162207"
+      user_role:
+        type: "string"
+        example: "Specalist"
+      user_type:
+        type: "string"
+        example: "Doctor"
+      sex:
+        type: "string"
+        example: "Male"
+      next_of_kin:
+        type: "string"
+        example: "Abdul"
+      next_of_kin_phone:
+        type: "string"
+        example: "09023674859"
+      next_of_kin_address:
+        type: "string"
+        example: "abuja"
+      relationship:
+        type: string
+        example: "brother"
+
+responses:
+  201:
+    description: Created successfully
+    schema:
+      type: object
+      properties:
+        address:
+          type: "string"
+          example: "NO1 kaduna"
+        created_at:
+          type: "string"
+          example: "2022-12-21 02:06:55.560224"
+        email:
+          type: "string"
+          example: "standard.forever123@gmail.com"
+        first_name:
+          type: "string"
+          example: "Standard"
+        last_name:
+          type: "string"
+          example: "forever"
+        licence_no:
+          type: "string"
+          example: "Zxc12"
+        phone:
+          type: "string"
+          example: "09025162207"
+        reg_no:
+          type: "string"
+          example: "U18DM1001"
+        updated_at:
+          type: "string"
+          example: "2022-12-21 02:06:55.560224"
+        user_role:
+          type: "string"
+          example: "Specalist"
+        user_type:
+          type: "string"
+          example: "Doctor"
+        sex:
+          type: "string"
+          example: "Male"
+        next_of_kin:
+          type: "string"
+          example: "Abdul"
+        next_of_kin_phone:
+          type: "string"
+          example: "09023674859"
+        next_of_kin_address:
+          type: "string"
+          example: "abuja"
+        relationship:
+          type: string
+          example: "brother"
+        id:
+          type: string
+          example: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747
+  400:
+    description: Missing name or Not Valid JSON
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Bad request
+  

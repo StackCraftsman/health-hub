@@ -1,0 +1,79 @@
+Create a new Patient
+---
+tags:
+  - Profile
+parameters:
+  - name: request
+    in: body
+    required: true
+    requires:
+      - name
+      - address
+      - email
+      - first_name
+      - last_name
+      - phone
+      - file_no
+    properties:
+      address:
+          type: "string"
+          example: "NO1 kaduna"
+      email:
+        type: "string"
+        example: "standard.forever123@gmail.com"
+      first_name:
+        type: "string"
+        example: "Standard"
+      last_name:
+        type: "string"
+        example: "forever"
+      phone:
+        type: "string"
+        example: "09025162207"
+      file_no:
+        type: "string"
+        example: "U18DM1001"
+     
+
+responses:
+  201:
+    description: Created successfully
+    schema:
+      type: object
+      properties:
+        address:
+          type: "string"
+          example: "NO1 kaduna"
+        created_at:
+          type: "string"
+          example: "2022-12-21 02:06:55.560224"
+        email:
+          type: "string"
+          example: "standard.forever123@gmail.com"
+        first_name:
+          type: "string"
+          example: "Standard"
+        last_name:
+          type: "string"
+          example: "forever"
+        phone:
+          type: "string"
+          example: "09025162207"
+        file_no:
+          type: "string"
+          example: "U18DM1001"
+        updated_at:
+          type: "string"
+          example: "2022-12-21 02:06:55.560224"
+        id:
+          type: string
+          example: Patient.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747
+  400:
+    description: Missing name or Not Valid JSON
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Bad request
+  

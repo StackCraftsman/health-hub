@@ -1,0 +1,71 @@
+Create Nurse record
+---
+tags:
+  - Nurse
+parameters:
+  - name: request
+    in: body
+    required: true 
+    requires:
+      - patient_id
+      - nurse_id
+    properties:
+      temperature: 
+        type: Integer
+      weight: 
+        type: Integer
+      blood_pressure:
+        type: Integer 
+      next_appointment: 
+        type: string
+      nurse_id: 
+        type: string
+      patient_id: 
+        type: string
+
+    example:
+      temperature: 23
+      weight: 34
+      blood_pressure: 78
+      next_appointment: Wed, 21 Dec 2022 02:43:07 GMT
+      patient_id: PatientDetails.6355df6c-8c54-402b-8e05-472e71420b11
+      nurse_id: Staff.30c863f6-12e8-4855-8495-1f7a2964bfd8
+
+responses:
+  201:
+    description: request executed successfully.
+    schema:
+      type: object
+      properties:
+        temperature: 
+          type: Integer
+        weight: 
+          type: Integer
+        blood_pressure:
+          type: Integer 
+        next_appointment: 
+          type: string
+        nurse_id: 
+          type: string
+        patient_id: 
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+        id:
+          type: string
+        
+      example:
+        created_at: Wed, 21 Dec 2022 02:43:07 GMT
+        id: NurseReport.36f8b8c3-11c8-4723-acb5-fc48f1f83bd2
+        temperature: 23
+        weight: 34
+        blood_pressure: 78
+        next_appointment: Wed, 21 Dec 2022 02:43:07 GMT
+        patient_id: PatientDetails.6355df6c-8c54-402b-8e05-472e71420b11
+        nurse_id: Staff.30c863f6-12e8-4855-8495-1f7a2964bfd8 
+        updated_at: Wed, 21 Dec 2022 02:43:07 GMT 
+          
+          
+

@@ -1,0 +1,81 @@
+Get Single patient record
+---
+tags:
+  - Patient
+parameters:
+- in: path
+  name: id
+  type: string
+  required: true
+  description: The ID of the Patient
+
+responses:
+  200:
+      description: request executed successfully.
+      schema:
+        type: array
+        items:
+          properties:
+            0:
+              type: object
+            1:
+              type: objecet
+
+          example:
+            0: ' {
+            doctor_record: {
+              created_at: 2022-12-21 02:35:42.611397,
+              diagnosis: nice work anthing,
+              doctor_id: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747,
+              entry: Your health,
+              id: DoctorReport.992ce7f4-d62c-47c2-a8a8-75436f47f1e4,
+              lab: lab record_2,
+              nurse_report: NurseReport.783ccd22-1fa2-4bcb-a5c4-41374f08beac,
+              prescription: what do you like,
+              recommendation: anything can do,
+              updated_at: 2022-12-21 02:35:42.611397
+            },
+            lab_record: null,
+            nurse_record: {
+              blood_pressure: 100,
+              created_at: 2022-12-21 02:11:22.847458,
+              entry: entry_3,
+              id: NurseReport.783ccd22-1fa2-4bcb-a5c4-41374f08beac,
+              next_appointment: tomorrow,
+              nurse_id: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747,
+              patient_id: PatientDetails.f38b4329-96f6-4fe0-9d88-2edfa9e698a2,
+              temperature: 40,
+              updated_at: 2022-12-21 02:11:22.847458,
+              weight: 90
+            }
+          }
+        }'
+        
+            1: '{
+            doctor_record: {
+              created_at: 2022-12-21 02:43:07.912427,
+              diagnosis: nice work anthing,
+              doctor_id: Staff.30c863f6-12e8-4855-8495-1f7a2964bfd8,
+              entry: Your health,
+              id: DoctorReport.36f8b8c3-11c8-4723-acb5-fc48f1f83bd2,
+              lab: lab record_2,
+              nurse_report: NurseReport.6355df6c-8c54-402b-8e05-472e71420b11,
+              prescription: what do you like,
+              recommendation: anything can do,
+              updated_at: 2022-12-21 02:43:07.912427
+            },
+            lab_record: null,
+            nurse_record: {
+              blood_pressure: 100,
+              created_at: 2022-12-21 02:38:57.428011,
+              entry: entry_3,
+              id: NurseReport.6355df6c-8c54-402b-8e05-472e71420b11,
+              next_appointment: tomorrow,
+              nurse_id: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747,
+              patient_id: PatientDetails.f38b4329-96f6-4fe0-9d88-2edfa9e698a2,
+              temperature: 40,
+              updated_at: 2022-12-21 02:38:57.428011,
+              weight: 90
+            }
+          }
+    }'

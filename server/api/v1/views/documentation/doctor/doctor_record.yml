@@ -1,0 +1,75 @@
+Create Doctor record
+---
+tags:
+  - Doctor
+parameters:
+  - name: request
+    in: body
+    required: true 
+    requires:
+      - doctor_id
+      - nurse_report
+    properties:
+      entry: 
+        type: string
+      diagnosis: 
+        type: string
+      recommendation:
+        type: string 
+      prescription: 
+        type: string
+      lab: 
+        type: string
+      doctor_id: 
+        type: string
+      nurse_report: 
+        type: string
+    example:
+      entry: "Text"
+      diagnosis: "Text"
+      recommendation: "Text"
+      prescription: "Text"
+      lab: "Text"
+      doctor_id: Staff.30c863f6-12e8-4855-8495-1f7a2964bfd8
+      nurse_report: NurseReport.6355df6c-8c54-402b-8e05-472e71420b11 
+responses:
+  201:
+    description: request executed successfully.
+    schema:
+      type: object
+      properties:
+        entry: 
+          type: string
+        diagnosis: 
+          type: string
+        recommendation:
+          type: string 
+        prescription: 
+          type: string
+        lab: 
+          type: string
+        doctor_id: 
+          type: string
+        nurse_report: 
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+        id:
+          type: string
+        
+      example:
+        created_at: Wed, 21 Dec 2022 02:43:07 GMT
+        id: DoctorReport.36f8b8c3-11c8-4723-acb5-fc48f1f83bd2
+        entry: "Text"
+        diagnosis: "Text"
+        recommendation: "Text"
+        prescription: "Text"
+        lab: "Text"
+        doctor_id: Staff.30c863f6-12e8-4855-8495-1f7a2964bfd8
+        nurse_report: NurseReport.6355df6c-8c54-402b-8e05-472e71420b11  
+        updated_at: Wed, 21 Dec 2022 02:43:07 GMT 
+          
+          
+

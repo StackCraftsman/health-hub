@@ -1,0 +1,5 @@
+Add the right decorator to all protected route
+In administrator file, in /login route i want to check if the user is either patient, admin or doctor using (user_type) from database.  if user and unhashpassword(user.password, password)
+
+In adminstrator file, in /updateprofile route i want to check for all unique field and remove them from what user can update in database to avoid conflict.
+

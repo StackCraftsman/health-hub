@@ -1,0 +1,45 @@
+gets all Patient profile 
+---
+tags:
+  - Profile
+responses:
+  200:
+    description: request executed successfully.
+    schema:
+      type: array
+      items:
+        type: object
+        properties:
+          address:
+            type: "string"
+            example: "NO1 kaduna"
+          created_at:
+            type: "string"
+            example: "2022-12-21 02:06:55.560224"
+          email:
+            type: "string"
+            example: "standard.forever123@gmail.com"
+          first_name:
+            type: "string"
+            example: "Standard"
+          last_name:
+            type: "string"
+            example: "forever"
+          phone:
+            type: "string"
+            example: "09025162207"
+          file_no:
+            type: "string"
+            example: "U18FL1001"
+          updated_at:
+            type: "string"
+            example: "2022-12-21 02:06:55.560224"
+          id:
+            type: string
+            example: Staff.0ac86aa1-2e9f-4ab9-9488-2b7037fb2747
+
+
+            
+
+ 
+

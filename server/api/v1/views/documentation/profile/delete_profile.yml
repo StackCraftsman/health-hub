@@ -1,0 +1,24 @@
+Delete profile for a user by ID
+---
+tags:
+  - Profile
+parameters:
+- in: path
+  name: id
+  type: string
+  required: true
+  description: the id of the user to be deleted
+
+responses:
+  200:
+    description: user deleted successfully
+    schema:
+      type: object
+  404:
+    description: user not found
+    schema:
+      type: object
+      properties:
+        error:
+          type: string
+          example: Not found
