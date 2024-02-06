@@ -7,7 +7,7 @@ To start up this project,
 
 - Clone this repo
 ```sh
-git clone https://github.com/standardforever/health-hub.git
+git clone https://github.com/health-hub/health-hub.git
 ```
 
 - Change directory to the `client dir`

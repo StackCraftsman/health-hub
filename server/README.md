@@ -12,7 +12,7 @@ In this project, we're building an Hospital Management System that helps hospita
 Follow these steps to contribute to this project
 - Clone the repo to your local machine
 ```
-	https://github.com/standardforever/health-hub.git
+	https://github.com/health-hub/health-hub.git
 ```
 - Create a new branch for the feature you are currently working on
 ```
